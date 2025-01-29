@@ -24,7 +24,7 @@ function App() {
   const sendAudioToBackend = async (text) => {
     try {
       const response = await fetch(
-        "https://voice-based-task-manager.onrender.com/tasks",
+        "https://faiyadhussain-voice-based-task-manager.onrender.com/tasks",
         {
           method: "POST",
           headers: {
@@ -76,7 +76,7 @@ function App() {
   const fetchTasks = async () => {
     try {
       const response = await fetch(
-        "https://voice-based-task-manager.onrender.com/tasks"
+        "https://faiyadhussain-voice-based-task-manager.onrender.com/tasks"
       );
       const data = await response.json();
       setTasks(data);
@@ -88,7 +88,7 @@ function App() {
   const deleteTask = async (id) => {
     try {
       const response = await fetch(
-        `https://voice-based-task-manager.onrender.com/tasks/${id}`,
+        `https://faiyadhussain-voice-based-task-manager.onrender.com/tasks/${id}`,
         {
           method: "DELETE",
         }
